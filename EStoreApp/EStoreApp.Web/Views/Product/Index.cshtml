@@ -1,0 +1,12 @@
+﻿@model List<EStoreApp.Web.Models.ViewModels.ProductDetailsViewModel>
+
+<h2 class="text-center">All Products</h2>
+<div class="row d-flex">
+    
+        @foreach (var item in Model)
+        {
+            <partial name="~/Views/Shared/Partial/Product/_AllProducts.cshtml" for="@item" />
+
+        }
+    
+</div>
